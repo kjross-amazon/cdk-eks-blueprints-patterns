@@ -106,7 +106,7 @@ export default class PipelineMultiEnvGitops {
             blueprints.CodePipelineStack.builder()
                 .application('npx ts-node bin/pipeline-multienv-gitops.ts')
                 .name('eks-blueprint-pipeline')
-                .owner(GITHUB_ORG)
+                .owner('kjross-amazon')
                 .codeBuildPolicies(blueprints.DEFAULT_BUILD_POLICIES)
                 .repository({
                     repoUrl: gitRepositoryName,
